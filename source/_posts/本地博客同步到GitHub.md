@@ -27,6 +27,7 @@ title: 本地博客同步到GitHub
  
 ```
 ### 本地博客同步到GitHub
+注：熟练掌握git命令
 在博客根目录下执行如下操作：
 ``` bash
   git init         #创建git仓库
@@ -48,23 +49,23 @@ title: 本地博客同步到GitHub
 ```
 ### git命令
 ``` bash
-  git config --global user.name [username]  配置用户名
-  git config --global user.email [email]	  配置邮箱
-  git init    初始化git仓库
-  git status  检查文件是否有被修改
-  git diff    查看文件修改的内容
-  git commit  提交文件
-  git log     显示从最近到最远的提交日志  --pretty=oneline  整理输出内容
-  git reset --hard HEAD^  回退到上个版本     上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100
-  git reset --hard xxxxx 回退到指定版本
-  git reflog  记录每一次命令
-  git checkout -- file   把file文件在工作区的修改全部撤销    命令中的--很重要，没有--，就变成了“切换到另一个分支”的命令
-  git reset HEAD file    可以把暂存区的修改撤销掉（unstage），重新放回工作区
-  git rm file   删除文件   要从版本库中删除该文件，那就用命令git rm删掉，并且git commit
-  ssh-keygen -t rsa -C "875727617@qq.com" 创建SSH Key
-  git push origin master  把本地master分支的最新修改推送至GitHub
-  git checkout -b dev     git checkout命令加上-b参数表示创建并切换   ---相当于  git branch dev   git checkout dev
-  git merge dev   合并dev分支到当前分支
+ git config --global user.name [username]  配置用户名
+ git config --global user.email [email]	  配置邮箱
+ git init    初始化git仓库
+ git status  检查文件是否有被修改
+ git diff    查看文件修改的内容
+ git commit  提交文件
+ git log     显示从最近到最远的提交日志  --pretty=oneline  整理输出内容
+ git reset --hard HEAD^  回退到上个版本     上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100
+ git reset --hard xxxxx 回退到指定版本
+ git reflog  记录每一次命令
+ git checkout -- file   把file文件在工作区的修改全部撤销    命令中的--很重要，没有--，就变成了“切换到另一个分支”的命令
+ git reset HEAD file    可以把暂存区的修改撤销掉（unstage），重新放回工作区
+ git rm file   删除文件   要从版本库中删除该文件，那就用命令git rm删掉，并且git commit
+ ssh-keygen -t rsa -C "875727617@qq.com" 创建SSH Key
+ git push origin master  把本地master分支的最新修改推送至GitHub
+ git checkout -b dev     git checkout命令加上-b参数表示创建并切换   ---相当于git branch dev   git checkout dev
+ git merge dev   合并dev分支到当前分支
  git branch -d dev  删除dev分支  -D 大写D是强行删除没有合并的分支
  git branch 查看分支
  git branch <name>  创建分支
@@ -87,4 +88,13 @@ title: 本地博客同步到GitHub
  gitignore   忽略特殊文件,然后把要忽略的文件名填进去
  git config --global alias.co checkout  配置别名 
  git pull origin back 取回远程主机某个分支的更新
+```
+### 删除并添加新的md文件操作
+``` bash
+ 在本地和github删除md文件
+ git pull origin back   #取回远程主机某个分支的更新
+ git add .    #所有变化提交到暂存区
+ git commit -m "新增md文件名称.md"    #提交文件
+ git push origin branchname     #推送back分支（branchname名称命名为back）
+ 
 ```
