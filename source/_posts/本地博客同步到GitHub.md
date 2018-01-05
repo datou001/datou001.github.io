@@ -91,7 +91,7 @@ title: 本地博客同步到GitHub
 ```
 ### 删除并添加新的md文件操作
 ``` bash
- 在本地和github删除md文件
+ 在本地和github删除md文件/git rm 要删除的文件名称
  git pull origin back   #取回远程主机某个分支的更新
  git add .    #所有变化提交到暂存区
  git commit -m "新增md文件名称.md"    #提交文件
