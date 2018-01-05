@@ -89,7 +89,7 @@
 <meta property="og:image" content="http://yoursite.com/images/deployer.png">
 <meta property="og:image" content="http://yoursite.com/images/deploy.png">
 <meta property="og:image" content="http://yoursite.com/images/success.png">
-<meta property="og:updated_time" content="2018-01-05T06:31:37.899Z">
+<meta property="og:updated_time" content="2018-01-05T10:01:39.689Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="本地博客同步到GitHub">
 <meta name="twitter:description" content="hexo部署到Github使用hexo deploy部署注：需要提前安装一个扩展1$ npm install hexo-deployer-git --save  1）修改_config.xml的配置如下： 1234deploy: type:git repo:git@github.com:githunname/githubname.github.io.git branch:master  2）1$">
@@ -309,6 +309,7 @@
 <p> <img src="/images/deploy.png" alt="“配置修改”"><br>2）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g -d   <span class="comment">#生成静态页面并部署</span></span><br></pre></td></tr></table></figure></p>
 <h3 id="本地博客同步到GitHub"><a href="#本地博客同步到GitHub" class="headerlink" title="本地博客同步到GitHub"></a>本地博客同步到GitHub</h3><p>在博客根目录下执行如下操作：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git init         <span class="comment">#创建git仓库</span></span><br><span class="line">git remote add origin git@github.com:githubname/githubname.github.io.git   <span class="comment">#添加远程仓库（githubname是自己的用户名）</span></span><br><span class="line">git checkout -b branchname   <span class="comment">#新建branch分支（branchname为自己定义的分支名称）</span></span><br><span class="line">git add .    <span class="comment">#所有变化提交到暂存区</span></span><br><span class="line">git commit -m <span class="string">"同步更改后的文件"</span>   <span class="comment">#提交文件</span></span><br><span class="line">git push origin branchname       <span class="comment">#推送back分支（branchname名称命名为back）</span></span><br></pre></td></tr></table></figure></p>
 <p> <img src="/images/success.png" alt="“本地博客成功部署到GitHub上”"></p>
+<h2 id="hexo部署到Github之后注意事项"><a href="#hexo部署到Github之后注意事项" class="headerlink" title="hexo部署到Github之后注意事项"></a>hexo部署到Github之后注意事项</h2><p> 每次部署完之后需执行如下操作以达到同步的目的<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .    <span class="comment">#所有变化提交到暂存区</span></span><br><span class="line">git commit -m <span class="string">"本地博客同步到GitHub.md"</span>   <span class="comment">#提交文件</span></span><br><span class="line">git push origin branchname       <span class="comment">#推送back分支（branchname名称命名为back）</span></span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -455,7 +456,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo部署到Github"><span class="nav-number">1.</span> <span class="nav-text">hexo部署到Github</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用hexo-deploy部署"><span class="nav-number">1.1.</span> <span class="nav-text">使用hexo deploy部署</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地博客同步到GitHub"><span class="nav-number">1.2.</span> <span class="nav-text">本地博客同步到GitHub</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo部署到Github"><span class="nav-number">1.</span> <span class="nav-text">hexo部署到Github</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用hexo-deploy部署"><span class="nav-number">1.1.</span> <span class="nav-text">使用hexo deploy部署</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地博客同步到GitHub"><span class="nav-number">1.2.</span> <span class="nav-text">本地博客同步到GitHub</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo部署到Github之后注意事项"><span class="nav-number">2.</span> <span class="nav-text">hexo部署到Github之后注意事项</span></a></li></ol></div>
             
 
           </div>
