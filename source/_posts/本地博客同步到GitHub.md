@@ -38,4 +38,11 @@ title: 本地博客同步到GitHub
  
 ```
  ![“本地博客成功部署到GitHub上”](/images/success.png)
-
+## hexo部署到Github之后注意事项 
+ 每次部署完之后需执行如下操作以达到同步的目的
+``` bash
+  git add .    #所有变化提交到暂存区
+  git commit -m "本地博客同步到GitHub.md"   #提交文件
+  git push origin branchname       #推送back分支（branchname名称命名为back）
+ 
+```
