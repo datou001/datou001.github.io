@@ -1,6 +1,6 @@
 ---
 title: Hexo建站
-tags: [Hexo,Node,js,Git]
+tags: [Node.js,Git,Hexo]
 ---
 
 
