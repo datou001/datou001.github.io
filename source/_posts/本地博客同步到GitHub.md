@@ -26,7 +26,7 @@ tags: [Git,Github,npm,Hexo]
 ``` bash
  $ hexo g -d   #生成静态页面并部署
  
-```
+``` 
 ### 本地博客同步到GitHub
 注：熟练掌握git命令
 在博客根目录下执行如下操作：
