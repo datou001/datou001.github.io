@@ -80,3 +80,7 @@ deploy:
   type: git
   repo: git@github.com:datou001/datou001.github.io.git
   branch: master
+
+# Extensions
+## plugins: http://hexo.io/plugins/
+plugins: hexo-generate-feed
