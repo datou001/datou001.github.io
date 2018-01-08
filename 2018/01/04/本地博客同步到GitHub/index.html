@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Hexo,Git,Github,npm," />
 
 
 
@@ -79,20 +79,21 @@
 
 
 
-<meta name="description" content="hexo部署到Github使用hexo deploy部署注：需要提前安装一个扩展1$ npm install hexo-deployer-git --save  1）修改_config.xml的配置如下： 1234deploy: type:git repo:git@github.com:githunname/githubname.github.io.git branch:master  2）1$">
+<meta name="description" content="hexo部署到Github使用hexo deploy部署注：需要提前安装一个扩展1$ npm install hexo-deployer-git --save  1）修改_config.xml的配置如下： 1234deploy: type:git repo:git@github.com:githunname/githubname.github.io.git branch:master  2）生成静">
+<meta name="keywords" content="Hexo,Git,Github,npm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="本地博客同步到GitHub">
 <meta property="og:url" content="http://yoursite.com/2018/01/04/本地博客同步到GitHub/index.html">
 <meta property="og:site_name" content="谁动了我的奶酪">
-<meta property="og:description" content="hexo部署到Github使用hexo deploy部署注：需要提前安装一个扩展1$ npm install hexo-deployer-git --save  1）修改_config.xml的配置如下： 1234deploy: type:git repo:git@github.com:githunname/githubname.github.io.git branch:master  2）1$">
+<meta property="og:description" content="hexo部署到Github使用hexo deploy部署注：需要提前安装一个扩展1$ npm install hexo-deployer-git --save  1）修改_config.xml的配置如下： 1234deploy: type:git repo:git@github.com:githunname/githubname.github.io.git branch:master  2）生成静">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/images/deployer.png">
 <meta property="og:image" content="http://yoursite.com/images/deploy.png">
 <meta property="og:image" content="http://yoursite.com/images/success.png">
-<meta property="og:updated_time" content="2018-01-05T10:24:36.755Z">
+<meta property="og:updated_time" content="2018-01-08T08:17:07.605Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="本地博客同步到GitHub">
-<meta name="twitter:description" content="hexo部署到Github使用hexo deploy部署注：需要提前安装一个扩展1$ npm install hexo-deployer-git --save  1）修改_config.xml的配置如下： 1234deploy: type:git repo:git@github.com:githunname/githubname.github.io.git branch:master  2）1$">
+<meta name="twitter:description" content="hexo部署到Github使用hexo deploy部署注：需要提前安装一个扩展1$ npm install hexo-deployer-git --save  1）修改_config.xml的配置如下： 1234deploy: type:git repo:git@github.com:githunname/githubname.github.io.git branch:master  2）生成静">
 <meta name="twitter:image" content="http://yoursite.com/images/deployer.png">
 
 
@@ -190,6 +191,16 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
           </a>
         </li>
       
@@ -306,7 +317,7 @@
         <h2 id="hexo部署到Github"><a href="#hexo部署到Github" class="headerlink" title="hexo部署到Github"></a>hexo部署到Github</h2><h3 id="使用hexo-deploy部署"><a href="#使用hexo-deploy部署" class="headerlink" title="使用hexo deploy部署"></a>使用hexo deploy部署</h3><p>注：需要提前安装一个扩展<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
 <p> <img src="/images/deployer.png" alt="“git命令”"><br>1）修改_config.xml的配置如下：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"> <span class="built_in">type</span>:git</span><br><span class="line"> repo:git@github.com:githunname/githubname.github.io.git</span><br><span class="line"> branch:master</span><br></pre></td></tr></table></figure>
-<p> <img src="/images/deploy.png" alt="“配置修改”"><br>2）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g -d   <span class="comment">#生成静态页面并部署</span></span><br></pre></td></tr></table></figure></p>
+<p> <img src="/images/deploy.png" alt="“配置修改”"><br>2）生成静态页面并部署<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g -d   <span class="comment">#生成静态页面并部署</span></span><br></pre></td></tr></table></figure></p>
 <h3 id="本地博客同步到GitHub"><a href="#本地博客同步到GitHub" class="headerlink" title="本地博客同步到GitHub"></a>本地博客同步到GitHub</h3><p>注：熟练掌握git命令<br>在博客根目录下执行如下操作：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git init         <span class="comment">#创建git仓库</span></span><br><span class="line">git remote add origin git@github.com:githubname/githubname.github.io.git   <span class="comment">#添加远程仓库（githubname是自己的用户名）</span></span><br><span class="line">git checkout -b branchname   <span class="comment">#新建branch分支（branchname为自己定义的分支名称）</span></span><br><span class="line">git add .    <span class="comment">#所有变化提交到暂存区</span></span><br><span class="line">git commit -m <span class="string">"同步更改后的文件"</span>   <span class="comment">#提交文件</span></span><br><span class="line">git push origin branchname       <span class="comment">#推送back分支（branchname名称命名为back）</span></span><br></pre></td></tr></table></figure></p>
 <p> <img src="/images/success.png" alt="“本地博客成功部署到GitHub上”"></p>
 <h2 id="hexo部署到Github之后注意事项"><a href="#hexo部署到Github之后注意事项" class="headerlink" title="hexo部署到Github之后注意事项"></a>hexo部署到Github之后注意事项</h2><h3 id="每次部署完之后需执行如下操作以达到同步的目的"><a href="#每次部署完之后需执行如下操作以达到同步的目的" class="headerlink" title="每次部署完之后需执行如下操作以达到同步的目的"></a>每次部署完之后需执行如下操作以达到同步的目的</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .    <span class="comment">#所有变化提交到暂存区</span></span><br><span class="line">git commit -m <span class="string">"本地博客同步到GitHub.md"</span>   <span class="comment">#提交文件</span></span><br><span class="line">git push origin branchname       <span class="comment">#推送back分支（branchname名称命名为back）</span></span><br></pre></td></tr></table></figure>
@@ -326,6 +337,18 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          
+            <a href="/tags/Git/" rel="tag"># Git</a>
+          
+            <a href="/tags/Github/" rel="tag"># Github</a>
+          
+            <a href="/tags/npm/" rel="tag"># npm</a>
+          
+        </div>
+      
 
       
       
@@ -344,6 +367,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/01/08/Hexo建站/" rel="prev" title="Hexo建站">
+                Hexo建站 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -418,7 +445,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -426,6 +453,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
