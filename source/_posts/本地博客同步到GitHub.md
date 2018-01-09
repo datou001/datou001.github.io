@@ -40,6 +40,17 @@ tags: [Git,Github,npm,Hexo]
  
 ```
  ![“本地博客成功部署到GitHub上”](/images/success.png)
+
+ ## Github Pages创建
+
+注：repository name名称必须与Owner一致且一个用户名只能创建一次
+![“github pages创建”](/images/github.png)
+
+
+  1、在Github上创建的datou001.github.io一个最大的特点就是其master中的html静态文件，可以通过链接http://datou001.github.io来直接访问。
+  2、Hexo -g 会生成一个静态网站（第一次会生成一个public目录），这个静态文件可以直接访问。
+  3、需要将hexo生成的静态网站，提交(git commit)到github上。
+  
 ## hexo部署到Github之后注意事项 
 ### 每次部署完之后需执行如下操作以达到同步的目的
 ``` bash
