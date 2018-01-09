@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-01-08T09:03:11.378Z</updated>
+  <updated>2018-01-09T07:02:35.252Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTML5</title>
+    <link href="http://yoursite.com/2018/01/09/HTML5/"/>
+    <id>http://yoursite.com/2018/01/09/HTML5/</id>
+    <published>2018-01-09T02:30:33.094Z</published>
+    <updated>2018-01-09T07:02:35.252Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="HTML网页结构"><a href="#HTML网页结构" class="headerlink" title="HTML网页结构"></a>HTML网页结构</h2><p><img src="/images/html布局.png" alt="“HTML网页结构”"></p><h2 id="HTML5新元素"><a href="#HTML5新元素" class="headerlink" title="HTML5新元素"></a>HTML5新元素</h2><h3 id="canvas新元素"><a href="#canvas新元素" class="headerlink" title="canvas新元素"></a>canvas新元素</h3><p><img src="/images/canvas.png" alt="“canvas新元素”"></p><h3 id="新表单元素"><a href="#新表单元素" class="headerlink" title="新表单元素"></a>新表单元素</h3><p><img src="/images/新表单元素.png" alt="“新表单元素”"></p><h3 id="新多媒体元素"><a href="#新多媒体元素" class="headerlink" title="新多媒体元素"></a>新多媒体元素</h3><p><img src="/images/新多媒体元素.png" alt="“新多媒体元素”"></p><h3 id="新的语义和结构元素"><a href="#新的语义和结构元素" class="headerlink" title="新的语义和结构元素"></a>新的语义和结构元素</h3><p><img src="/images/新的语义和结构元素.png" alt="“新的语义和结构元素”"></p><h3 id="已移除的元素"><a href="#已移除的元素" class="headerlink" title="已移除的元素"></a>已移除的元素</h3><p><img src="/images/已移除的元素.png" alt="“已移除的元素”"></p><h2 id="html5行内元素和块级元素"><a href="#html5行内元素和块级元素" class="headerlink" title="html5行内元素和块级元素"></a>html5行内元素和块级元素</h2><h3 id="html5-行内元素"><a href="#html5-行内元素" class="headerlink" title="html5 行内元素"></a>html5 行内元素</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;a&gt;标签可定义锚</span><br><span class="line">&lt;abbr&gt;表示一个缩写形式</span><br><span class="line">&lt;acronym&gt;定义只取首字母缩写</span><br><span class="line">&lt;b&gt;字体加粗</span><br><span class="line">&lt;bdo&gt;可覆盖默认的文本方向</span><br><span class="line">&lt;big&gt;大号字体加粗</span><br><span class="line">&lt;br&gt;换行</span><br><span class="line">&lt;cite&gt;引用进行定义</span><br><span class="line">&lt;code&gt;定义计算机代码文本</span><br><span class="line">&lt;dfn&gt;定义一个定义项目</span><br><span class="line">&lt;em&gt;定义为强调的内容</span><br><span class="line">&lt;i&gt;斜体文本效果</span><br><span class="line">&lt;img&gt;向网页中嵌入一幅图像</span><br><span class="line">&lt;input&gt;输入框</span><br><span class="line">&lt;kbd&gt;定义键盘文本</span><br><span class="line">&lt;label&gt;标签为</span><br><span class="line">&lt;input&gt; 元素定义标注（标记）</span><br><span class="line">&lt;q&gt;定义短的引用</span><br><span class="line">&lt;samp&gt;定义样本文本</span><br><span class="line">&lt;select&gt;创建单选或多选菜单</span><br><span class="line">&lt;small&gt;呈现小号字体效果</span><br><span class="line">&lt;span&gt;组合文档中的行内元素</span><br><span class="line">&lt;strong&gt;语气更强的强调的内容</span><br><span class="line">&lt;sub&gt;定义下标文本</span><br><span class="line">&lt;sup&gt;定义上标文本</span><br><span class="line">&lt;textarea&gt;多行的文本输入控件</span><br><span class="line">&lt;tt&gt;打字机或者等宽的文本效果</span><br><span class="line">&lt;var&gt;定义变量</span><br></pre></td></tr></table></figure><h3 id="html5-块级元素"><a href="#html5-块级元素" class="headerlink" title="html5 块级元素"></a>html5 块级元素</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&lt;address&gt;定义地址</span><br><span class="line">&lt;caption&gt;定义表格标题</span><br><span class="line">&lt;dd&gt;定义列表中定义条目</span><br><span class="line">&lt;div&gt;定义文档中的分区或节</span><br><span class="line">&lt;dl&gt;定义列表</span><br><span class="line">&lt;dt&gt;定义列表中的项目</span><br><span class="line">&lt;fieldset&gt;定义一个框架集</span><br><span class="line">&lt;form&gt;创建 HTML 表单</span><br><span class="line">&lt;h1&gt;定义最大的标题</span><br><span class="line">&lt;h2&gt;定义副标题</span><br><span class="line">&lt;h3&gt;定义标题</span><br><span class="line">&lt;h4&gt;定义标题</span><br><span class="line">&lt;h5&gt;定义标题</span><br><span class="line">&lt;h6&gt;定义最小的标题</span><br><span class="line">&lt;hr&gt;创建一条水平线</span><br><span class="line">&lt;legend&gt;元素为</span><br><span class="line">&lt;fieldset&gt;元素定义标题</span><br><span class="line">&lt;li&gt;标签定义列表项目</span><br><span class="line">&lt;noframes&gt;为那些不支持框架的浏览器显示文本，于 frameset 元素内部</span><br><span class="line">&lt;noscript&gt;定义在脚本未被执行时的替代内容</span><br><span class="line">&lt;ol&gt;定义有序列表</span><br><span class="line">&lt;ul&gt;定义无序列表</span><br><span class="line">&lt;p&gt;标签定义段落</span><br><span class="line">&lt;pre&gt;定义预格式化的文本</span><br><span class="line">&lt;table&gt;标签定义 HTML 表格</span><br><span class="line">&lt;tbody&gt;标签表格主体（正文）</span><br><span class="line">&lt;td&gt;表格中的标准单元格</span><br><span class="line">&lt;tfoot&gt;定义表格的页脚（脚注或表注）</span><br><span class="line">&lt;th&gt;定义表头单元格</span><br><span class="line">&lt;thead&gt;标签定义表格的表头</span><br><span class="line">&lt;tr&gt;定义表格中的行</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;HTML网页结构&quot;&gt;&lt;a href=&quot;#HTML网页结构&quot; class=&quot;headerlink&quot; title=&quot;HTML网页结构&quot;&gt;&lt;/a&gt;HTML网页结构&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/html布局.png&quot; alt=&quot;“HTML网页结构”&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="HTML5" scheme="http://yoursite.com/tags/HTML5/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo建站</title>
