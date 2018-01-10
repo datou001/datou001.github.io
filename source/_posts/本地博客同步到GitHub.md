@@ -6,6 +6,43 @@ tags: [Git,Github,npm,Hexo]
 
 ## hexo部署到Github 
 
+
+### 本地博客同步到GitHub
+
+注：熟练掌握git命令
+
+在博客根目录下执行如下操作：
+
+``` bash
+ $ git init         #创建git仓库
+ $ git remote add origin git@github.com:githubname/githubname.github.io.git                                 #添加远程仓库（githubname是自己的用户名）    
+ $ git checkout -b branchname   #新建branch分支（branchname为自己定义的分支名称）
+ $ git add .    #所有变化提交到暂存区
+ $ git commit -m "同步更改后的文件"   #提交文件
+ $ git push origin branchname       #推送back分支（branchname名称命名为back）
+ 
+```
+
+ ![“本地博客成功部署到GitHub上”](/images/success.png)
+
+ ## Github Pages创建
+
+注：repository name名称必须与Owner一致且一个用户名只能创建一次
+![“github pages创建”](/images/create-repo.png)
+![“github pages创建”](/images/github.png)
+
+. 配置github账户信息（YourName和YourEmail替换成自己的）
+![“name”](/images/name.png)
+![“email”](/images/email.png)
+. 创建SSh
+ 在git命令行中输入：ssh-keygen -t -C "youremail@example.com"，生成ssh，然后输入id_rsa.pub
+ ![“ssh”](/images/ssh.png)
+ . 将上面获取的ssh放到github中：
+ ![“ssh”](/images/settings.png)
+ ![“ssh-key”](/images/ssh-key.png)
+ . 添加一个New SSH key,title随便取,key就填刚刚那一段。
+   .在git中验证是否添加成功：ssh -T git@github.com
+   . 完成下一步设置成功。
 ### 使用hexo deploy部署
 注：需要提前安装一个扩展
 ``` bash
@@ -14,43 +51,28 @@ tags: [Git,Github,npm,Hexo]
  ![“git命令”](/images/deployer.png)
 1）修改_config.xml的配置如下：
 
-``` bash
+
  deploy:
-  type:git
-  repo:git@github.com:githunname/githubname.github.io.git
-  branch:master
+   type:git
+   repo:git@github.com:githunname/githubname.github.io.git
+   branch:master
  
-```
+
  ![“配置修改”](/images/deploy.png)
 2）生成静态页面并部署
+
 ``` bash
+ $ hexo clean
  $ hexo g -d   #生成静态页面并部署
- 
-``` 
-### 本地博客同步到GitHub
-注：熟练掌握git命令
-在博客根目录下执行如下操作：
-``` bash
-  git init         #创建git仓库
-  git remote add origin git@github.com:githubname/githubname.github.io.git   #添加远程仓库（githubname是自己的用户名）
-  git checkout -b branchname   #新建branch分支（branchname为自己定义的分支名称）
-  git add .    #所有变化提交到暂存区
-  git commit -m "同步更改后的文件"   #提交文件
-  git push origin branchname       #推送back分支（branchname名称命名为back）
+ $ hexo s    #或者hexo server,可以在http://localhost:4000/查看
  
 ```
- ![“本地博客成功部署到GitHub上”](/images/success.png)
 
- ## Github Pages创建
-
-注：repository name名称必须与Owner一致且一个用户名只能创建一次
-![“github pages创建”](/images/github.png)
-
-
-  1、在Github上创建的datou001.github.io一个最大的特点就是其master中的html静态文件，可以通过链接http://datou001.github.io来直接访问。
+注：
+  1、在Github上创建的XXX.github.io一个最大的特点就是其master中的html静态文件，可以通过链接http://XXX.github.io来直接访问。
   2、Hexo -g 会生成一个静态网站（第一次会生成一个public目录），这个静态文件可以直接访问。
   3、需要将hexo生成的静态网站，提交(git commit)到github上。
-  
+
 ## hexo部署到Github之后注意事项 
 ### 每次部署完之后需执行如下操作以达到同步的目的
 ``` bash

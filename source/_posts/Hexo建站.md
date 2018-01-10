@@ -13,7 +13,7 @@ tags: [Node.js,Git,Hexo]
 ### 安装Git
 下载地址：[安装git](https://git-scm.com/download/)
 
-### 安装Hexo
+### 安装Hex
 ``` bash
  $ cd d:/hexo
  $ npm install hexo-cli -g
@@ -23,6 +23,17 @@ tags: [Node.js,Git,Hexo]
  $ hexo g #或者hexo generate
  $ hexo s #或者hexo server,可以在http://localhost:4000/查看
 ```
+![hexo创建图片](/images/hexo-init.png)
+解析：
+ . node_modules：是依赖包
+ . public：存放的是生成的页面
+ . scaffolds：命令生成文章等的模板
+ . source：用命令创建的各种文章
+ . themes：主题
+ . _config.yml：整个博客的配置
+ . db.json：source解析所得到的
+ . package.json：项目所需模块项目的配置信息
+
 hexo命令解析：
   1.hexo g：生成静态文件，会在当前目录下生成一个新的public文件夹。
   2.hexo s：启动本地web服务，用于博客的预览。
@@ -63,8 +74,6 @@ hexo命令解析：
  $ git pull
  $ hexo g  #生成静态文件
  $ git pull  #启动本地web服务器
-
- 
 ```
 ### 创建主题(test)
 
@@ -78,15 +87,7 @@ hexo命令解析：
  $ hexo s     #启动本地web服务器
 
 ```
-### Github Pages创建
 
-注：repository name名称必须与Owner一致且一个用户名只能创建一次
-![“github pages创建”](/images/github.png)
-
-
-  1、在Github上创建的datou001.github.io一个最大的特点就是其master中的html静态文件，可以通过链接http://datou001.github.io来直接访问。
-  2、Hexo -g 会生成一个静态网站（第一次会生成一个public目录），这个静态文件可以直接访问。
-  3、需要将hexo生成的静态网站，提交(git commit)到github上。
 
 
 
